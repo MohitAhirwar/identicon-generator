@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Identicon</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id= "app">
+  <h2>Welcome To My Identicon Generator</h2>
+
+  <div>
+    Input: 
+    <input v-on:input="onInput" />
+  </div>
+  <br/>
+  <div>
+    Output:
+    <div v-html="identicon"/>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.rawgit.com/dmester/jdenticon/5bbdf8cb/dist/jdenticon.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
