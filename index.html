@@ -2,24 +2,39 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Identicon</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+  <title>Identicon Generator</title>
   
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div id= "app">
-  <h2>Welcome To My Identicon Generator</h2>
 
-  <div>
-    Input: 
-    <input v-on:input="onInput" />
-  </div>
+  <nav class="navbar navbar-dark bg-dark">
+
+        <h1 class="mx-auto text-white bg-dark">  Welcome to Identicon Generator</h1>
+
+  </nav>
+ 
   <br/>
-  <div>
-    Output:
-    <div v-html="identicon"/>
+  <br/>
+  <div class="container">
+  <div class="shadow-lg p-3 mb-5 bg-body rounded">
+    Input :  <input v-on:input="onInput" />
   </div>
+</div>
+
+  <br/>
+  <div class="container">
+  <div class="shadow-lg p-3 mb-5 bg-body rounded">
+    Output :  <div v-html="identicon"/>
+  </div>
+</div>
 </div>
 <!-- partial -->
   <script src='https://cdn.rawgit.com/dmester/jdenticon/5bbdf8cb/dist/jdenticon.min.js'></script>
